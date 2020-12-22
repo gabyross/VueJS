@@ -1,27 +1,16 @@
-#bag{
-    width: 200px;
-    height: 500px;
-    margin: 0 auto;
-    background: url(bag.png) center no-repeat;
-    background-size: 80%;
+span{
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin: 10px 0;
 }
 
-#bag.burst{
-    background-image: url(bag-burst.png);
+.available span{
+    background: green;
 }
 
-#bag-health{
-    width: 200px;
-    border: 2px solid #000;
-    margin: 0 auto 20px auto;
-}
-
-#bag-health div{
-    height: 20px;
-    background: crimson
-}
-
-#controls{
-    width: 120px;
-    margin: 0 auto;
+.nearby span:after{
+    content: "nearby";
+    margin-left: 10px;
 }
