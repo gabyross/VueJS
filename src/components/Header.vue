@@ -1,47 +1,14 @@
 <template>
     <header>
-        <h1 v-on:click="changeTitle">{{ title }}</h1>
+        <h1>{{ title }}</h1>
     </header>
 </template>
 <script>
-// imports
-import { bus } from '../main';
 export default {
-    props: {
-      title: {
-        type: String,
-        required: true
-      }
-    },
     data(){
         return{
+            title: 'Vue Ninjas'
         }
-    },
-    methods: {
-      changeTitle: function(){
-        // this.$emit('changeTitle', 'Vue Ninjas');
-        this.title = 'Vue Ninjas';
-        bus.$emit('titleChanged', 'Vue Ninjas');
-      }
-    },
-    // lifecycle hooks
-    beforeCreate(){
-        alert('beforeCreate');
-    },
-    created(){
-        alert('created');
-    },
-    beforeMount(){
-        alert('beforeMount');
-    },
-    mounted(){
-        alert('mounted');
-    },
-    beforeUpdate(){
-        alert('beforeUpdate');
-    },
-    updated(){
-        alert('updated');
     }
 }
 </script>
