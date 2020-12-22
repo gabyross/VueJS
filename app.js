@@ -1,10 +1,8 @@
 new Vue({
     el: '#vue-app',
     data: {
-        name: 'Rose',
-        job: 'Writer',
-        website: 'http://www.thenetninja.co.uk',
-        websiteTag: '<a href="http://www.thenetninja.co.uk">The Net Ninja</a>'
+        name: 'Shaun',
+        job: 'Ninja'
     },
     methods: {
         greet: function(time){
