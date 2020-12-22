@@ -7,12 +7,19 @@
         <script src="https://unpkg.com/vue"></script>
     </head>
     <body>
-        <h1>Refs</h1>
+        <h1>Multiple Vue Instances</h1>
+        
         <div id="vue-app-one">
-            <input type="text" ref="input" />
-            <button v-on:click="readRefs">Submit</button>
-            <p>Your fav food: {{ output }}</p>
+            <h2>{{ title }}</h2>
+            <p>{{ greet }}</p>
         </div>
+        
+        <div id="vue-app-two">
+            <h2>{{ title }}</h2>
+            <p>{{ greet }}</p>
+            <button v-on:click="changeTitle">Change App 1 Title</button>
+        </div>
+
     </body>
 
     <script src="app.js"></script>
